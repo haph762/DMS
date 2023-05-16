@@ -1,0 +1,56 @@
+<!-- BEGIN: Main Menu-->
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mr-auto">
+                <a class="navbar-brand" href="dashboard">
+                    <!-- <img width="60px" src="assets/boots.jpg" alt=""> -->
+                    <h2 class="brand-text mb-0">Boost Juice</h2>
+                </a>
+            </li>
+            <li class="nav-item nav-toggle">
+                <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                    <i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i>
+                    <i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary"
+                        data-ticon="icon-disc"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="shadow-bottom"></div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class="navigation-header"><span>Quản lý</span></li>
+            <ng-container *ngFor="let menu of menuDisplay">
+
+                <li class="nav-item {{menu.subMenus?.length > 0 ? 'has-sub' : ''}}  {{getActiveLink(menu.path)}}">
+                    <a routerLink="/{{menu.path}}" *ngIf="!menu.subMenus || menu.subMenus.length == 0">
+                        <i class="{{menu.icon}}"></i>
+                        <span class="menu-title">
+                            {{menu.text}}
+                        </span>
+                    </a>
+                    <a *ngIf="menu.subMenus && menu.subMenus.length > 0">
+                        <i class="{{menu.icon}}"></i>
+                        <span class="menu-title">
+                            {{menu.text}}
+                        </span>
+                        <i class="menu-expand"></i>
+                    </a>
+                    <ul class="menu-content" *ngIf="menu.subMenus && menu.subMenus.length > 0">
+                        <li class="is-shown {{getActiveLink(menuItem.path)}}" *ngFor="let menuItem of menu.subMenus">
+                            <a routerLink="/{{menuItem.path}}">
+                                <i class="feather icon-circle"></i>
+                                <span class="menu-item">
+                                    {{menuItem.text}}
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ng-container>
+        </ul>
+    </div>
+</div>
+<!-- END: Main Menu-->

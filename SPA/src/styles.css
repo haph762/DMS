@@ -1,0 +1,183 @@
+/* You can add global styles to this file, and also import other style files */
+
+.flexbox-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.login-footer {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    margin: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.85em;
+    white-space: nowrap;
+}
+
+.e-input {
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 400px;
+    margin: 10px 5px 5px 10px;
+}
+
+.e-search {
+    width: 100% !important;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.e-control,
+.e-css {
+    font-family: 'Montserrat', Helvetica, Arial, serif !important;
+}
+
+.modal-header .close {
+    margin: -1px 10px -5px 0px !important;
+}
+
+.e-pager .e-currentitem,
+.e-pager .e-currentitem:hover {
+    background: #5E50EE !important;
+    color: #fff;
+    opacity: 1;
+}
+
+.error-message {
+    color: #EA5455;
+    font-size: 11px;
+}
+
+.e-input-group input.e-input, .e-input-group.e-control-wrapper input.e-input, .e-input-group textarea.e-input, .e-input-group.e-control-wrapper textarea.e-input {
+    height: 36px !important;
+}
+
+.e-multiselect {
+    height: 36px !important;
+}
+
+.e-input-group:not(.e-success):not(.e-warning):not(.e-error), .e-input-group.e-control-wrapper:not(.e-success):not(.e-warning):not(.e-error) {
+    padding-top: 2px !important;
+}
+
+.status {
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+
+.table th, .table td {
+    padding: 5px !important;
+}
+
+.card-body {
+    padding-top: 0px !important;
+}
+
+.form-group {
+    margin-bottom: 5px !important;
+}
+
+.sesion-avatar:hover .upload-image {
+    display: block !important;
+}
+
+.sesion-avatar {
+    position: relative;
+}
+
+.upload-image {
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.remove-formArray {
+    position: absolute;
+    top: 4px;
+    display: none;
+    left: 15px;
+}
+
+.session-size {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.session-size:hover .remove-formArray {
+    display: block !important;
+}
+
+.modal-dialog-centered.modal-dialog-scrollable .modal-content {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+.main-menu.menu-light .navigation li.has-sub ul.menu-content {
+    padding: 7px;
+    margin: 0px !important;
+}
+
+.e-tbar-btn{
+    margin: 5px !important;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+    width: 300px;
+}
+
+html body .content {
+    margin-left: 300px;
+}
+
+.main-menu .navbar-header {
+    width: 300px;
+}
+
+body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .expanded {
+    width: 300px !important;
+}
+
+.pac-container {
+    z-index: 9999 !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-step-header {
+    border-radius: 5px;
+}
+
+.mat-horizontal-stepper-header-container {
+    padding: 0px 21px;
+}

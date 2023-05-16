@@ -1,0 +1,21 @@
+<!-- The Modal -->
+<div #dialogModal id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">Đồng bộ {{title}}</div>
+        <div class="modal-body">
+            <div class="text-center">
+                <h4 *ngIf="run">Đang đồng bộ: </h4>
+                <h4 *ngIf="!run">Đồng bộ xong: </h4>
+                <h4>
+                    Thời gian {{display | date :"HH:mm:ss":'UTC'}}
+                </h4>
+            </div>
+            <div [innerHtml]="content">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button *ngIf="!run" class="btn btn-secondary" (click)="close()">Đóng</button>
+        </div>
+    </div>
+</div>

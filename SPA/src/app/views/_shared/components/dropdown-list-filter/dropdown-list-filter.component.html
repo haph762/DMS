@@ -1,0 +1,36 @@
+<button class="filter bg-white" id="btn-filter" (click)="openDropdownFilter()">
+    <div class="filter-header">{{title}}</div>
+    <div class="filter-icon">
+        <i class="fa fa-sort-desc"></i>
+    </div>
+</button>
+
+<div id="filter-dropdown-dialog" class="filter-dropdown">
+    <div (click)="chooesItemFilter($event,'today')" class="filter-dropdown-item position-relative">Hôm nay</div>
+    <div (click)="chooesItemFilter($event,'yesterday')" class="filter-dropdown-item position-relative">Hôm qua</div>
+    <div (click)="chooesItemFilter($event,'week')" class="filter-dropdown-item position-relative">Tuần này</div>
+    <div (click)="chooesItemFilter($event,'month')" class="filter-dropdown-item position-relative">Tháng này</div>
+    <div [formGroup]="formGroup" class="filter-dropdown-item-date">
+        <div>
+            <label>Ngày bắt đầu</label>
+            <ejs-datepicker placeholder="Chọn bắt đầu" formControlName="timeStart" [format]="'dd/MM/yyyy'">
+            </ejs-datepicker>
+            <label *ngIf="f.timeStart.errors && (f.timeStart.dirty || f.timeStart.touched || submited)"
+                class="error-message">
+                Ngày bắt đầu không được để trống
+            </label>
+        </div>
+        <div>
+            <label>Ngày kết thúc</label>
+            <ejs-datepicker placeholder="Chọn ngày kết thúc" formControlName="timeEnd" [format]="'dd/MM/yyyy'">
+            </ejs-datepicker>
+            <label *ngIf="f.timeEnd.errors && (f.timeEnd.dirty || f.timeEnd.touched || submited)" class="error-message">
+                Ngày kết thúc không được để trống
+            </label>
+        </div>
+    </div>
+    <div class="filter-button text-center d-flex">
+        <button class="btn btn-primary mr-2" (click)="confirmFilter()">Xác nhận</button>
+        <button class="btn btn-secondary" (click)="closeFilter()">Hủy</button>
+    </div>
+</div>

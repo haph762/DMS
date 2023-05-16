@@ -1,0 +1,28 @@
+.error-container h1 {
+    color: #2dc3e8;
+}
+
+.error-container h1 {
+    font-size: 110px;
+    font-weight: 300;
+    text-align: center;
+    color: #2dc3e8;
+}
+
+.error-container h2 {
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.error-divider {
+    margin-top: 0px;
+    padding: 30px 0;
+}
+
+.error-container p.description {
+    color: #e5e5e5;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 30px;
+}

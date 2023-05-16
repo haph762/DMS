@@ -1,0 +1,22 @@
+h2 {
+  font-size: 5vmin;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3vmin;
+  margin-bottom: 40px;
+}
+
+.p-403 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  --mouseStartX: -64;
+  --mouseStartY: -64;
+  overflow: hidden;
+}
+

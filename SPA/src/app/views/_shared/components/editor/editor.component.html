@@ -1,0 +1,12 @@
+<!-- <ckeditor [(ngModel)]="mycontent"
+          #myckeditor="ngModel"
+          name="myckeditor"
+          required
+          [config]="ckeConfig"
+          debounce="500"
+          (ngModelChange)="onChange($event)">
+</ckeditor> -->
+
+<ckeditor debounce="100" required readonly [editor]="editor5" [config]="configCkEditor5" [(ngModel)]="mycontent"
+    (ngModelChange)="onChange($event)">
+</ckeditor>

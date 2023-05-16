@@ -1,0 +1,126 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title"><i class="feather icon-filter"></i> Bộ lọc</h4>
+        <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show">
+        <div class="card-body">
+            <div class="users-list-filter">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <label>Chọn ngày</label>
+                        <!-- <app-dropdown-list-filter (onChangeTime)="onChangeTime($event)" [timeEnd]="today"
+                            [timeStart]="today">
+                        </app-dropdown-list-filter> -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 col-md-4">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-body">
+    <!-- Dashboard Ecommerce Starts -->
+    <section id="dashboard-ecommerce">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-header d-flex flex-column align-items-start pb-1">
+                        <div class="avatar bg-rgba-primary p-50 m-0">
+                            <div class="avatar-content">
+                                <i class="feather icon-users text-primary font-medium-5"></i>
+                            </div>
+                        </div>
+                        <h2 class="text-bold-700 mt-1">Người dùng</h2>
+                        <!-- <p class="mb-0 font-size-18 font-weigh-bold">{{dashboard ? (dashboard?.numberOfNewUser | number)
+                            : 0}}</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-header d-flex flex-column align-items-start pb-1">
+                        <div class="avatar bg-rgba-success p-50 m-0">
+                            <div class="avatar-content">
+                                <i class="feather icon-credit-card text-success font-medium-5"></i>
+                            </div>
+                        </div>
+                        <h2 class="text-bold-700 mt-1">Doanh thu</h2>
+                        <!-- <p class="mb-0 font-size-18 font-weigh-bold">{{dashboard ? (dashboard?.revenue |
+                            number) + ' VNĐ': 0}} </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-header d-flex flex-column align-items-start pb-1">
+                        <div class="avatar bg-rgba-danger p-50 m-0">
+                            <div class="avatar-content">
+                                <i class="feather icon-shopping-cart text-danger font-medium-5"></i>
+                            </div>
+                        </div>
+                        <h2 class="text-bold-700 mt-1">Đơn hàng</h2>
+                        <!-- <p class="mb-0 font-size-18 font-weigh-bold">{{dashboard ? (dashboard?.numberOfOrder | number):
+                            0}}</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Biểu đồ doanh thu theo tháng</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div id="revenue-chart-by-month"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Biểu đồ đơn hàng theo tháng</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div id="order-chart-by-month"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Biểu đồ khách hàng mới theo tháng</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div id="customer-chart-by-month"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard Ecommerce ends -->
+
+</div>

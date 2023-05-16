@@ -1,0 +1,21 @@
+.error-container h1 {
+    font-size: 110px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.body-500 .error-container h1 {
+    color: #fb6e52;
+}
+.body-500 .error-container h1 {
+    color: #fb6e52;
+}
+
+
+.error-divider[_ngcontent-imp-c20] {
+    padding: 30px 0;
+}
+.error-divider {
+    margin-top: 0;
+    padding: 30px 0;
+}
